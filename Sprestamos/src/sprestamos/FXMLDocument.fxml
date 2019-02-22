@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sprestamos.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="624.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sprestamos.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+      <TabPane prefHeight="535.0" prefWidth="630.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Inicio">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="502.0" prefWidth="149.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="197.0" text="Nominas" />
+                              <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Traspaso" />
+                              <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Calculadoras " />
+                              <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Lista de Cobros" />
+                              <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Gastos" />
+                              <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="CxC" />
+                              <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Empleados" />
+                              <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="197.0" text="Recibos" />
+                              <Button fx:id="button" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="196.0" text="Prestamos" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Seguridad">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
     </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </AnchorPane>
