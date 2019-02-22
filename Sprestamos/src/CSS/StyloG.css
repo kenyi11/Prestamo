@@ -7,4 +7,72 @@ and open the template in the editor.
     Created on : 22-feb-2019, 17:33:03
     Author     : kenyi
 */
+#CBotones {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0); 
+    
+}
+#botones{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1px 0;
+    -fx-cursor: hand;
+}
+#botones:hover{
+    -fx-background-color: #000000;
+    -fx-border-color: #000000;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1px 0;
+    -fx-cursor: hand;
+    -fx-text-fill: #ffffff;
+}
 
+#paneInicio{
+    -fx-background-color: #ffffff;
+}
+#tabpane{
+    -fx-tab-min-width: 10.0em;
+    -fx-tab-min-height: 2.5em;
+}
+.tab-header-background {
+    -fx-background-color:  #000000 ;
+    
+}
+.tab{
+    -fx-background-color:black;
+   -fx-border-width: 0 1px 0 0;
+   -fx-border-color: #ffffff;
+   -fx-border-style: solid;
+   -fx-background-radius: 0;
+}
+.tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+}
+.tab:hover{
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 0.0;
+    -fx-border-insets: 0.0;
+   -fx-border-width: 0 1px 0 0;
+   -fx-border-color: white;
+   -fx-border-style: solid; 
+}
+.tab:hover .tab-label{
+   -fx-text-fill: #000000; 
+}
+.tab:selected{
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 0.0;
+    -fx-border-insets: 0.0;
+   -fx-border-width: 0 1px 0 0;
+   -fx-border-color: white;
+   -fx-border-style: solid; 
+}
+.tab:selected .tab-label{
+   -fx-text-fill: #000000; 
+}
+.tab-header-area{
+   -fx-background-insets: 0;
+   -fx-padding: 0;
+}
