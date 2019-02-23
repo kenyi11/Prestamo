@@ -7,15 +7,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="624.0" stylesheets="@../CSS/StyloG.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sprestamos.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="anchopane" prefHeight="495.0" prefWidth="624.0" stylesheets="@../CSS/StyloG.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sprestamos.FXMLDocumentController">
     <children>
-      <TabPane id="tabpane" prefHeight="535.0" prefWidth="630.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane id="tabpane" fx:id="tabpane" prefHeight="535.0" prefWidth="630.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Inicio">
                <content>
                   <AnchorPane id="paneInicio" prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <VBox id="CBotones" prefHeight="502.0" prefWidth="149.0">
+                        <VBox id="CBotones" fx:id="Hbotones" prefHeight="502.0" prefWidth="145.0">
                            <children>
                               <Button id="botones" mnemonicParsing="false" prefHeight="44.0" prefWidth="197.0" text="Nominas" />
                               <Button id="botones" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Traspaso" />
