@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -15,11 +16,19 @@
                <content>
                   <AnchorPane id="paneInicio" prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <VBox id="CBotones" fx:id="Hbotones" prefHeight="502.0" prefWidth="145.0">
+                        <VBox id="CBotones" fx:id="Hbotones" prefHeight="502.0" prefWidth="172.0">
                            <children>
-                              <Button id="botones" mnemonicParsing="false" prefHeight="44.0" prefWidth="197.0" text="Nominas" />
-                              <Button id="botones" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Traspaso" />
-                              <Button id="botones" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Calculadoras " />
+                              <Button id="botones" fx:id="btnNomina" mnemonicParsing="false" prefHeight="44.0" prefWidth="197.0" text="Nominas">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Imagenes/icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button id="botones" fx:id="btnTrapaso" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Traspaso" />
+                              <Button id="botones" fx:id="btnClculadora" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Calculadoras " />
                               <Button id="botones" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Lista de Cobros" />
                               <Button id="botones" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="Gastos" />
                               <Button id="botones" mnemonicParsing="false" prefHeight="48.0" prefWidth="197.0" text="CxC" />

@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.AnchorPane;
@@ -33,6 +34,15 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private VBox Hbotones;
     
+     @FXML
+    private Button btnTrapaso;
+     
+     
+    private Button btnNomina;
+
+    @FXML
+    private Button btnClculadora;
+    
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -53,6 +63,7 @@ public class FXMLDocumentController implements Initializable {
         AnchorPane.setBottomAnchor(Hbotones, 0.0);
         AnchorPane.setTopAnchor(Hbotones, 0.0);
         AnchorPane.setLeftAnchor(Hbotones, 0.0);
+        
     
     }
 }
