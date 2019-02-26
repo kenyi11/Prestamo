@@ -50,6 +50,9 @@ public class FXMLDocumentController implements Initializable {
      
       @FXML
     private Button btnNomina;
+      
+      @FXML
+    private Button btnClientes;
 
     @FXML
     private Button btnClculadora;
@@ -67,6 +70,7 @@ public class FXMLDocumentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         Iniciar();
         btnNomina.setOnAction(e -> nomina());
+        btnClientes.setOnAction(e -> clientes());
     }    
     public void Iniciar(){
         AnchorPane.setBottomAnchor(tabpane, 0.0);
@@ -86,6 +90,25 @@ public class FXMLDocumentController implements Initializable {
             System.out.println("nomina");
             AnchorPane ac =  (AnchorPane) rootConteiner.getChildren().get(0);
             Parent root = FXMLLoader.load(getClass().getResource("/sprestamos/nomina/nominaFXML.fxml"));
+            root.translateXProperty().set(-10-rootConteiner.getWidth());
+            rootConteiner.getChildren().add(root);
+            Timeline timeline = new Timeline();
+            KeyValue kv = new KeyValue(root.translateXProperty(),0,Interpolator.EASE_IN);
+            KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
+            timeline.getKeyFrames().add(kf);
+            timeline.play();
+            rootConteiner.getChildren().remove(ac);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    private void clientes() {
+       try {
+            System.out.println("nomina");
+            AnchorPane ac =  (AnchorPane) rootConteiner.getChildren().get(0);
+            Parent root = FXMLLoader.load(getClass().getResource("/registroDeClientes/registroDeClientes.fxml"));
             root.translateXProperty().set(-10-rootConteiner.getWidth());
             rootConteiner.getChildren().add(root);
             Timeline timeline = new Timeline();
